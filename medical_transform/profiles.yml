@@ -1,0 +1,12 @@
+medical_transform:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: 5492460
+      dbname: medical_dw
+      schema: public
+      threads: 4
