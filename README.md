@@ -15,7 +15,6 @@ This project focuses on building a robust data pipeline for Ethiopian medical bu
 5. [Setup and Installation](#setup-and-installation)
 6. [Usage](#usage)
 7. [Challenges and Solutions](#challenges-and-solutions)
-8. [Next Steps](#next-steps)
 9. [Contributing](#contributing)
 10. [License](#license)
 
