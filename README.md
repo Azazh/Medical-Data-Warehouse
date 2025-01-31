@@ -29,36 +29,6 @@ The goal of this project is to build a data pipeline that:
 
 The pipeline is designed to be modular, scalable, and easy to maintain.
 
-
-
-## **Repository Structure**
-```plaintext
-project/
-├── data_cleaning.py         # Python script for data cleaning
-├── telegram_scraper.py      # Python script for Telegram scraping
-├── scraping.log            # Logs for the scraping process
-├── data_cleaning.log       # Logs for the data cleaning process
-├── raw_data/               # Directory for raw scraped data
-│   ├── DoctorsET_20231025_143022.json
-│   ├── Chemed_20231025_143023.json
-│   ├── media/              # Directory for scraped media files
-│   │   ├── DoctorsET/
-│   │   │   ├── 1.jpg
-│   │   │   ├── 2.jpg
-│   ├── archive/            # Directory for archived raw files
-├── medical_transform/       # DBT project for data transformation
-│   ├── models/
-│   │   ├── staging/
-│   │   │   ├── stg_medical_data.sql
-│   │   │   └── schema.yml
-│   │   ├── marts/
-│   │   │   ├── fact_messages.sql
-│   ├── dbt_project.yml      # DBT project configuration
-│   ├── profiles.yml         # DBT profiles configuration
-```
-
-
-
 ## **Task 1: Data Scraping and Collection Pipeline**
 ### **Objective**
 Scrape data from Telegram channels, including text and media, and store it in a structured format.
@@ -153,13 +123,6 @@ dbt docs serve
 | Rate limits on Telegram API | Implemented rate limiting and retries in the scraping script. |
 | Inconsistent data formats in Telegram messages | Standardized text and date formats during cleaning. |
 | Duplicate messages in scraped data | Removed duplicates based on `message_id` and channel. |
-
-
-
-## **Next Steps**
-- **Task 3**: Implement object detection using YOLO for media files.
-- **Task 4**: Design and implement the data warehouse schema.
-- **Task 5**: Integrate data enrichment and advanced analytics.
 
 
 
